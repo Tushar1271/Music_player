@@ -1,0 +1,347 @@
+@font-face{
+    font-family: first;
+    src: url(/font/billy-argel_countryside/Countryside-YdKj.ttf);
+}
+@font-face{
+    font-family : second;
+    src: url(/font/billy-argel_quick-kiss-personal-use/QuickKissPersonalUse-PxlZ.ttf);
+}
+@font-face{
+    font-family: third;
+    src: url(/font//herofonts_youth-touch-demo/YouthTouchDemoRegular-4VwY.ttf);
+}
+@font-face{
+    font-family: four;
+    src: url(/font/iconian-fonts_heroes-assemble/HeroesAssemble3DItalic-ozEo.otf);
+}
+@font-face{
+    font-family: five;
+    src: url(/font/nurf-designs_raphtalia-personal-use-only/Raphtalia.otf);
+}
+@font-face{
+    font-family: six;
+    src: url(/font/subectype-and-orenari_darkline-font/Darkline-owBMq.otf);
+}
+@font-face{
+    font-family: seven;
+    src: url(/font/total-fontgeek-dtf-ltd_brightontwo-sans-nbp/2BR_GOTH.ttf);
+}
+@font-face{
+    font-family: eight;
+    src: url(/font/ardyanatypes_fontania/Fontania-MjXr.ttf);
+}
+@font-face{
+    font-family: nine;
+    src: url(/font/chequered-ink_madeleina-sans/FSLA_NonCommercial_License.html);
+}
+@font-face{
+        font-family: ten;
+    src: url(/font/kineticplasma-fonts_warsaw-gothic/WarsawGothic.otf);
+}
+body{
+    background-color: black !important;
+}
+#ti1{
+    font-family: six;
+}
+.topbar{
+    width:100%;
+    height:80px;
+    background-color:rgb(15, 15, 15);
+    z-index: 4;
+    position: fixed;
+    top:0px;
+    display: none;
+}
+.vesperimg{
+    width:75px;
+    height: 75px;
+    margin-left: 30px;
+    position: absolute;
+    z-index: 5;
+}
+.vesper{
+    font-size: 6rem;
+    color: white;
+    position: absolute;
+    margin-left: 110px;
+    font-family: six;
+}
+a{
+    text-decoration: none !important;
+    color: rgb(172, 172, 172) !important;
+}
+a:hover{
+    color: white !important;
+}
+
+.linkpage{
+    font-size: 3rem;
+    float: left;
+    margin-left: 100px;
+    list-style-type: none;
+    margin-top: 20px;
+    font-family: ten;
+}
+ul{
+    margin-left: 500px;
+}
+
+.mouseball{
+    background-color: white;
+    width: 150px;
+    height:150px;
+    border-radius: 90px 90px 90px 90px;
+    position: absolute;
+    transform : translate(-50%,-50%);
+    z-index: 7;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    animation: rotation 1s infinite linear;
+}
+@keyframes rotation{
+    from{ transform: rotate(0deg)}
+    to{ transform: rotate(360deg)}
+}
+
+.videocontainer{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+}
+.videocon{
+    top:-20%;
+    left: 0px;
+    position: absolute;
+    overflow: hidden;
+
+}
+/* audio player */
+.audioplayer{
+    background-color: rgb(15, 15, 15);
+    height:30px;
+    width:100%;
+    position:fixed;
+    bottom:0px;
+    display:none;
+    z-index: 5;
+}
+.audioplayer:hover{
+height:125px;
+z-index: 3;
+background-color:rgb(26, 24, 24);
+}
+#vol{
+    width:115px;
+    position: absolute;
+    margin-left: 1203px;
+    top:63px;
+    height:2px;
+    display: flex;
+    z-index: 4;
+}
+.volumeprogress{
+    background-color: white;
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    margin-top: 6px;
+}
+.volprog{
+    background-color: rgb(15, 15, 15);
+    width: 120px;
+    height: 10px;
+    position: absolute;
+    margin-left: 1200px;
+    top:54px;
+}
+.volumeball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    margin-left: 50px;
+    pointer-events: none;
+    z-index: 5;
+}
+.play-button{
+width:64px;
+height: 64px;
+position: absolute;
+margin-left: 100px;
+z-index:2;
+
+border-radius:50%;
+}
+.nextbutton{
+width:40px;
+height: 40px;
+margin-top: 15px;
+margin-left: 220px;
+display:none;
+position: absolute;
+}
+.previousbutton{
+width:40px;
+height: 40px;
+margin-top: 15px;
+display:none;
+margin-left: 20px;
+position: absolute;
+
+}
+#song-name{
+font-size: 4rem;
+margin-top: 35px;
+color: white;
+margin-left: 400px;
+z-index: 1;
+width:800px;
+font-family: ten;
+pointer-events: none;
+}
+.audiomg{
+    width:100px;
+    height:100px;
+}
+.audiopart{
+width:100%;
+margin-left: 360px;
+height: 12px;
+position: absolute;
+overflow:hidden;
+z-index: -1;
+background-color: rgb(26, 24, 24);
+}
+
+
+.progress1{
+height:6px;
+background-color:white;
+position: absolute;
+z-index: 3;
+}
+/* ________________________________________________________________________________________________________________________________________________ */
+.MultiCarousel { float: left; overflow: hidden; width: 100%; position:relative; height:250px; margin-top:50px}
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left;}
+        .MultiCarousel .MultiCarousel-inner .item { float: left;margin-left:30px;}
+        .MultiCarousel .MultiCarousel-inner .item > div {color:white;width:250px;height:250px;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); background-color: white;color: black;}
+    .MultiCarousel .leftLst { left:0;background-color: white; color: black; }
+    .MultiCarousel .rightLst { right:0;background-color: white; color: black;  }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; display: none; }
+       
+
+/* ______________________________________________________________________________________________________________________________________________________ */
+
+.ed{
+    font-size: 10rem;
+    margin-top: 150px;
+    margin-left:100px;
+    color: white;
+    font-family: ten;
+    pointer-events: none;
+    z-index: 3 !important;
+}
+.tunescover{
+    width:200px;
+    height:180px;
+}
+
+.sname{
+    font-size: 2rem;
+    margin-top:10px;
+    pointer-events: none;
+}
+.singername{
+    opacity: .6;
+    color: white;
+    font-size: 1.5rem;
+    pointer-events: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.tunescover:hover{
+    opacity: .3;
+}
+.sonname{
+    font-size: 5rem;
+    color: white;
+    margin-left: 200px;
+    margin-top: 0px;
+    position: absolute;
+    pointer-events: none;
+    pointer-events: none;
+    font-family: ten;
+}
+.trend{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.song-writer{
+    pointer-events: none;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 100px;
+    pointer-events: none;
+    font-family: ten;
+}
+#trending{
+    display:none;
+    margin-top: 200px;
+}
+#video{
+    display:none;
+}
+.trendingcover{
+    width: 200px;
+    height:125px;
+    margin-left:50px ;
+}
+hr{
+    width:1300px;
+}
+/* VIDEO PAGE_____________________________________________________________________________________________________________ */
+
+.tu{
+    width:50px;
+    height: 50px;
+    float: left;
+}
+.sne{
+    color: white;
+    margin-left: 20px;
+    font-size: 2rem;
+    font-family: ten;
+}
+.sie{
+    color: white;
+    margin-left: 20px;
+    font-family: ten;
+}
+.playlist1{
+    position: absolute;
+    float: left;
+    margin-left: 500px;
+    margin-top: 200px;
+    overflow-y: auto;
+    height: 450px;
+    padding-right: 100px;
+}
+.playlist{
+    width: 500px;
+    height: 600px;
+}
+.vvcon{
+    width: 600px !important ;
+    height: 600px !important;
+    margin-left: 100px;
+    z-index: 3;
+    
+}
